@@ -81,40 +81,31 @@ while True:
              'E': len(os.listdir(directory+"/E")),
              'F': len(os.listdir(directory+"/F")),
              'G': len(os.listdir(directory+"/G")),
-             'H': len(os.listdir(directory+"/B")),
-             'I': len(os.listdir(directory+"/C")),
-             'J': len(os.listdir(directory+"/D")),
-             'K': len(os.listdir(directory+"/E")),
-             'L': len(os.listdir(directory+"/F")),
-             'M': len(os.listdir(directory+"/G")),
-             'N': len(os.listdir(directory+"/B")),
-             'O': len(os.listdir(directory+"/C")),
-             'P': len(os.listdir(directory+"/D")),
-             'Q': len(os.listdir(directory+"/E")),
-             'R': len(os.listdir(directory+"/F")),
-             'S': len(os.listdir(directory+"/G"))
-             'T': len(os.listdir(directory+"/B")),
-             'U': len(os.listdir(directory+"/C")),
-             'V': len(os.listdir(directory+"/D")),
-             'W': len(os.listdir(directory+"/E")),
-             'X': len(os.listdir(directory+"/F")),
-             'Y': len(os.listdir(directory+"/G"))
-             'Z': len(os.listdir(directory+"/G"))
-             
-             
-             }
+             'H': len(os.listdir(directory+"/H")),
+             'I': len(os.listdir(directory+"/I")),
+             'J': len(os.listdir(directory+"/J")),
+             'K': len(os.listdir(directory+"/K")),
+             'L': len(os.listdir(directory+"/L")),
+             'M': len(os.listdir(directory+"/M")),
+             'N': len(os.listdir(directory+"/N")),
+             'O': len(os.listdir(directory+"/O")),
+             'P': len(os.listdir(directory+"/P")),
+             'Q': len(os.listdir(directory+"/Q")),
+             'R': len(os.listdir(directory+"/R")),
+             'S': len(os.listdir(directory+"/S")),
+             'T': len(os.listdir(directory+"/T")),
+             'U': len(os.listdir(directory+"/U")),
+             'V': len(os.listdir(directory+"/V")),
+             'W': len(os.listdir(directory+"/W")),
+             'X': len(os.listdir(directory+"/X")),
+             'Y': len(os.listdir(directory+"/Y")),
+             'Z': len(os.listdir(directory+"/Z"))}
              
     
     # Printing the count in each set to the screen
     cv2.putText(frame, "MODE : "+mode, (10, 50), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
     cv2.putText(frame, "IMAGE COUNT", (10, 100), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
-    cv2.putText(frame, "A : "+str(count['A']), (10, 120), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
-    cv2.putText(frame, "B : "+str(count['B']), (10, 140), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
-    cv2.putText(frame, "C : "+str(count['C']), (10, 160), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
-    cv2.putText(frame, "D : "+str(count['D']), (10, 180), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
-    cv2.putText(frame, "E : "+str(count['E']), (10, 200), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
-    cv2.putText(frame, "F : "+str(count['F']), (10, 220), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
-    cv2.putText(frame, "G : "+str(count['G']), (10, 240), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+
     
     # Coordinates of the ROI
     x1 = int(0.5*frame.shape[1])
