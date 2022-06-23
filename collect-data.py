@@ -15,6 +15,25 @@ if not os.path.exists("data"):
     os.makedirs("data/train/E")
     os.makedirs("data/train/F")
     os.makedirs("data/train/G")
+    os.makedirs("data/train/H")
+    os.makedirs("data/train/I")
+    os.makedirs("data/train/J")
+    os.makedirs("data/train/K")
+    os.makedirs("data/train/L")
+    os.makedirs("data/train/M")
+    os.makedirs("data/train/N")
+    os.makedirs("data/train/O")
+    os.makedirs("data/train/P")
+    os.makedirs("data/train/Q")
+    os.makedirs("data/train/R")
+    os.makedirs("data/train/S")
+    os.makedirs("data/train/T")
+    os.makedirs("data/train/U")
+    os.makedirs("data/train/V")
+    os.makedirs("data/train/W")
+    os.makedirs("data/train/X")
+    os.makedirs("data/train/Y")
+    os.makedirs("data/train/Z")
     os.makedirs("data/test/A")
     os.makedirs("data/test/B")
     os.makedirs("data/test/C")
@@ -22,6 +41,25 @@ if not os.path.exists("data"):
     os.makedirs("data/test/E")
     os.makedirs("data/test/F")
     os.makedirs("data/test/G")
+    os.makedirs("data/test/H")
+    os.makedirs("data/test/I")
+    os.makedirs("data/test/J")
+    os.makedirs("data/test/K")
+    os.makedirs("data/test/L")
+    os.makedirs("data/test/M")
+    os.makedirs("data/test/N")
+    os.makedirs("data/test/O")
+    os.makedirs("data/test/P")
+    os.makedirs("data/test/Q")
+    os.makedirs("data/test/R")
+    os.makedirs("data/test/S")
+    os.makedirs("data/test/T")
+    os.makedirs("data/test/U")
+    os.makedirs("data/test/V")
+    os.makedirs("data/test/W")
+    os.makedirs("data/test/X")
+    os.makedirs("data/test/Y")
+    os.makedirs("data/test/Z")
     
 
 # Train or test 
@@ -42,7 +80,29 @@ while True:
              'D': len(os.listdir(directory+"/D")),
              'E': len(os.listdir(directory+"/E")),
              'F': len(os.listdir(directory+"/F")),
-             'G': len(os.listdir(directory+"/F"))}
+             'G': len(os.listdir(directory+"/G")),
+             'H': len(os.listdir(directory+"/B")),
+             'I': len(os.listdir(directory+"/C")),
+             'J': len(os.listdir(directory+"/D")),
+             'K': len(os.listdir(directory+"/E")),
+             'L': len(os.listdir(directory+"/F")),
+             'M': len(os.listdir(directory+"/G")),
+             'N': len(os.listdir(directory+"/B")),
+             'O': len(os.listdir(directory+"/C")),
+             'P': len(os.listdir(directory+"/D")),
+             'Q': len(os.listdir(directory+"/E")),
+             'R': len(os.listdir(directory+"/F")),
+             'S': len(os.listdir(directory+"/G"))
+             'T': len(os.listdir(directory+"/B")),
+             'U': len(os.listdir(directory+"/C")),
+             'V': len(os.listdir(directory+"/D")),
+             'W': len(os.listdir(directory+"/E")),
+             'X': len(os.listdir(directory+"/F")),
+             'Y': len(os.listdir(directory+"/G"))
+             'Z': len(os.listdir(directory+"/G"))
+             
+             
+             }
              
     
     # Printing the count in each set to the screen
@@ -54,7 +114,7 @@ while True:
     cv2.putText(frame, "D : "+str(count['D']), (10, 180), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
     cv2.putText(frame, "E : "+str(count['E']), (10, 200), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
     cv2.putText(frame, "F : "+str(count['F']), (10, 220), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
-    cv2.putText(frame, "G : "+str(count['G']), (10, 220), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "G : "+str(count['G']), (10, 240), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
     
     # Coordinates of the ROI
     x1 = int(0.5*frame.shape[1])
