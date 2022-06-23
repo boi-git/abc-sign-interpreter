@@ -48,13 +48,13 @@ while True:
     # Printing the count in each set to the screen
     cv2.putText(frame, "MODE : "+mode, (10, 50), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
     cv2.putText(frame, "IMAGE COUNT", (10, 100), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
-    cv2.putText(frame, "A : "+str(count['zero']), (10, 120), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
-    cv2.putText(frame, "B : "+str(count['one']), (10, 140), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
-    cv2.putText(frame, "C : "+str(count['two']), (10, 160), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
-    cv2.putText(frame, "D : "+str(count['three']), (10, 180), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
-    cv2.putText(frame, "E : "+str(count['four']), (10, 200), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
-    cv2.putText(frame, "F : "+str(count['five']), (10, 220), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
-    cv2.putText(frame, "G : "+str(count['five']), (10, 220), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "A : "+str(count['A']), (10, 120), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "B : "+str(count['B']), (10, 140), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "C : "+str(count['C']), (10, 160), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "D : "+str(count['D']), (10, 180), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "E : "+str(count['E']), (10, 200), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "F : "+str(count['F']), (10, 220), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "G : "+str(count['G']), (10, 220), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
     
     # Coordinates of the ROI
     x1 = int(0.5*frame.shape[1])
@@ -82,19 +82,19 @@ while True:
     interrupt = cv2.waitKey(10)
     if interrupt & 0xFF == 27: # esc key
         break
-    if interrupt & 0xFF == ord('10'):
+    if interrupt & 0xFF == ord('A'):
         cv2.imwrite(directory+'A/'+str(count['A'])+'.jpg', roi)
-    if interrupt & 0xFF == ord('11'):
+    if interrupt & 0xFF == ord('B'):
         cv2.imwrite(directory+'B/'+str(count['B'])+'.jpg', roi)
-    if interrupt & 0xFF == ord('12'):
+    if interrupt & 0xFF == ord('C'):
         cv2.imwrite(directory+'C/'+str(count['C'])+'.jpg', roi)
-    if interrupt & 0xFF == ord('13'):
+    if interrupt & 0xFF == ord('D'):
         cv2.imwrite(directory+'D/'+str(count['D'])+'.jpg', roi)
-    if interrupt & 0xFF == ord('14'):
+    if interrupt & 0xFF == ord('E'):
         cv2.imwrite(directory+'E/'+str(count['E'])+'.jpg', roi)
-    if interrupt & 0xFF == ord('15'):
+    if interrupt & 0xFF == ord('F'):
         cv2.imwrite(directory+'F/'+str(count['F'])+'.jpg', roi)
-    if interrupt & 0xFF == ord('16'):
+    if interrupt & 0xFF == ord('G'):
         cv2.imwrite(directory+'G/'+str(count['G'])+'.jpg', roi)
 cap.release()
 cv2.destroyAllWindows()
