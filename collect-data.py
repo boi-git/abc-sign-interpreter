@@ -147,5 +147,43 @@ while True:
         cv2.imwrite(directory+'F/'+str(count['F'])+'.jpg', roi)
     if interrupt & 0xFF == ord('G'):
         cv2.imwrite(directory+'G/'+str(count['G'])+'.jpg', roi)
+    if interrupt & 0xFF == ord('H'):
+        cv2.imwrite(directory+'H/'+str(count['H'])+'.jpg', roi)
+    if interrupt & 0xFF == ord('I'):
+        cv2.imwrite(directory+'I/'+str(count['I'])+'.jpg', roi)
+    if interrupt & 0xFF == ord('J'):
+        cv2.imwrite(directory+'J/'+str(count['J'])+'.jpg', roi)
+    if interrupt & 0xFF == ord('K'):
+        cv2.imwrite(directory+'K/'+str(count['K'])+'.jpg', roi)
+    if interrupt & 0xFF == ord('L'):
+        cv2.imwrite(directory+'L/'+str(count['L'])+'.jpg', roi)
+    if interrupt & 0xFF == ord('M'):
+        cv2.imwrite(directory+'M/'+str(count['M'])+'.jpg', roi)
+    if interrupt & 0xFF == ord('N'):
+        cv2.imwrite(directory+'N/'+str(count['N'])+'.jpg', roi)
+    if interrupt & 0xFF == ord('O'):
+        cv2.imwrite(directory+'O/'+str(count['O'])+'.jpg', roi)
+    if interrupt & 0xFF == ord('P'):
+        cv2.imwrite(directory+'P/'+str(count['P'])+'.jpg', roi)
+    if interrupt & 0xFF == ord('Q'):
+        cv2.imwrite(directory+'Q/'+str(count['Q'])+'.jpg', roi)
+    if interrupt & 0xFF == ord('R'):
+        cv2.imwrite(directory+'R/'+str(count['R'])+'.jpg', roi)
+    if interrupt & 0xFF == ord('S'):
+        cv2.imwrite(directory+'S/'+str(count['S'])+'.jpg', roi)
+    if interrupt & 0xFF == ord('T'):
+        cv2.imwrite(directory+'T/'+str(count['T'])+'.jpg', roi)
+    if interrupt & 0xFF == ord('U'):
+        cv2.imwrite(directory+'U/'+str(count['U'])+'.jpg', roi)
+    if interrupt & 0xFF == ord('V'):
+        cv2.imwrite(directory+'V/'+str(count['V'])+'.jpg', roi)
+    if interrupt & 0xFF == ord('W'):
+        cv2.imwrite(directory+'W/'+str(count['W'])+'.jpg', roi)
+    if interrupt & 0xFF == ord('X'):
+        cv2.imwrite(directory+'X/'+str(count['X'])+'.jpg', roi)
+    if interrupt & 0xFF == ord('Y'):
+        cv2.imwrite(directory+'Y/'+str(count['Y'])+'.jpg', roi)
+    if interrupt & 0xFF == ord('Z'):
+        cv2.imwrite(directory+'Z/'+str(count['Z'])+'.jpg', roi)
 cap.release()
 cv2.destroyAllWindows()
