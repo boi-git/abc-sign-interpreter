@@ -23,7 +23,7 @@ classifier.add(Flatten())
 
 # Adding a fully connected layer
 classifier.add(Dense(units=128, activation='relu'))
-classifier.add(Dense(units=6, activation='softmax')) # softmax for more than 2
+classifier.add(Dense(units=7, activation='softmax')) # softmax for more than 2
 
 # Compiling the CNN
 classifier.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy']) # categorical_crossentropy for more than 2
@@ -53,12 +53,12 @@ test_set = test_datagen.flow_from_directory('data/test',
                                             batch_size=5,
                                             color_mode='grayscale',
                                             class_mode='categorical') 
-classifier.fit_generator(
+classifier.fit(
         training_set,
-        steps_per_epoch=600, # No of images in training set
+        steps_per_epoch=335, # No of images in training set
         epochs=10,
         validation_data=test_set,
-        validation_steps=30)# No of images in test set
+        validation_steps=5)# No of images in test set
 
 
 # Saving the model
@@ -66,4 +66,3 @@ model_json = classifier.to_json()
 with open("model-bw.json", "w") as json_file:
     json_file.write(model_json)
 classifier.save_weights('model-bw.h5')
-
